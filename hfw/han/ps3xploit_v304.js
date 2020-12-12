@@ -1,7 +1,7 @@
 var debug=false;
 
 var ua = navigator.userAgent;
-var fwVersion = ua.substring(ua.indexOf("5.0 (") + 19, ua.indexOf(") Apple"));
+var fwVersion = '4.86';
 
 var explore_plugin_usb='/explore_plugin.sprx';
 var explore_plugin_blind='/dev_blind/vsh/module/explore_plugin.sprx';
