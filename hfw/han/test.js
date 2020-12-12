@@ -23,6 +23,7 @@ var videoplayer_plugin_usb='/videoplayer_plugin.sprx';
 var videoplayer_plugin_blind='/dev_blind/vsh/module/videoplayer_plugin.sprx';
 var videoplayer_plugin_fsize=0x1C166A;
 
+var ps3xploit_ecdsa_key='948DA13E8CAFD5BA0E90CE434461BB327FE7E080475EAA0AD3AD4F5B6247A7FDA86DF69790196773';
 var ps3hen_ecdsa_key='948DA13E8CAFD5BA0E90CE434461BB327FE7E080475EAA0AD3AD4F5B6247A7FDA86DF69790196773';
 var index_key='DA7D4B5E499A4F53B1C1A14A7484443B';
 var f_turnoff='/dev_hdd0/tmp/turnoff';
