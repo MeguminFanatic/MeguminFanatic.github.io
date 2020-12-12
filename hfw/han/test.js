@@ -23,7 +23,6 @@ var videoplayer_plugin_usb='/videoplayer_plugin.sprx';
 var videoplayer_plugin_blind='/dev_blind/vsh/module/videoplayer_plugin.sprx';
 var videoplayer_plugin_fsize=0x1C166A;
 
-var ps3xploit_ecdsa_key='948DA13E8CAFD5BA0E90CE434461BB327FE7E080475EAA0AD3AD4F5B6247A7FDA86DF69790196773';
 var ps3hen_ecdsa_key='948DA13E8CAFD5BA0E90CE434461BB327FE7E080475EAA0AD3AD4F5B6247A7FDA86DF69790196773';
 var index_key='DA7D4B5E499A4F53B1C1A14A7484443B';
 var f_turnoff='/dev_hdd0/tmp/turnoff';
@@ -137,6 +136,8 @@ var gadget_mod13_addr=0;
 var gadget_mod14_addr=0;
 var gadget_mod15_addr=0;
 var gadget_mod16_addr=0;
+var ipf1_addr=0; 
+var ipf2_addr=0; 
 var xtra_data;var stack_frame;var jump_2;var jump_1;var xtra_data_addr;var stack_frame_addr;var jump_2_addr;var jump_1_addr;
 var fail_msg_frag=hr+"<h1><b>Exploit Initialization FAILED!</h1><h2><span style='color:#000000;'><a href=\"javascript:window.location.reload();\">Refresh this page</a> & try again...</span></b></h2>";
 var progress_msg_frag1=hr+"<h1><b>Exploit Initialization..."+br+"<span style='color:#000000;'>Progress: ";
@@ -620,6 +621,8 @@ var gadget_mod13_addr_487=0x336870; //store_r3 gadget
 var gadget_mod14_addr_487=0x633900; //load r3 dword
 var gadget_mod15_addr_487=0x39D038; //load r3 word
 var gadget_mod16_addr_487=0x4F732C; //set toc
+var ipf1_addr_487=0x6ebb78; 
+var ipf2_addr_487=0x507374;
 
 function hexh2bin(hex_val)
 {
