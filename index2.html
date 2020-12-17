@@ -17,6 +17,17 @@ li
   float: left;
 }
 
+.neon
+{
+  display: block;
+  color: #32a852;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+  text-shadow: 0 0 30px #2bf060;
+}
+
 li a
 {
   display: block;
@@ -41,5 +52,16 @@ li a:hover
   <li><a href="#news">News</a></li>
   <li><a href="#contact">Contact</a></li>
   <li style="float:right"><a class="active" href="#about">About</a></li>
+  <li style="float:right" class="neon">Date: <span id="date"></span><br>Time: <span id="time"></span></li>
 </ul>
+<p>Date: <span id="date"></span></p>
+
+<p>Time: <span id="time"></span></p>
+<script>
+var d = new Date();
+document.getElementById("date").innerHTML = (("0"+d.getDate()).slice(-2)) +"."+ (("0"+(d.getMonth()+1)).slice(-2)) +"."+ (d.getFullYear());
+
+var t = new Date();
+document.getElementById("time").innerHTML = (("0"+t.getHours()).slice(-2)) +":"+ (("0"+t.getMinutes()).slice(-2));
+</script>
 </body>
