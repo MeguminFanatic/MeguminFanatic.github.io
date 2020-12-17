@@ -1,52 +1,10 @@
 <html>
 <head>
 <title>MeguminFanatic Test website</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-ul 
-{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333333;
-}
-
-li 
-{
-  float: left;
-}
-
-.neon
-{
-  display: block;
-  color: #32a852;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: 'Quicksand', sans-serif;
-  text-shadow: 0 0 30px #2bf060;
-}
-
-li a
-{
-  display: block;
-  color: #32a852;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: 'Quicksand', sans-serif;
-  text-shadow: 0 0 30px #2bf060;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover 
-{
-  background-color: #1f1f1f;
-}
-</style>
+<link rel="stylesheet" href="index.css">
+<script src="index.js"></script>
 </head>
-<body>
+<body onload=display_dt();>
 <ul>
   <li><a href="#home">Home</a></li>
   <li><a href="#news">News</a></li>
@@ -54,14 +12,8 @@ li a:hover
   <li style="float:right"><a class="active" href="#about">About</a></li>
   <li style="float:right" class="neon">Date: <span id="date"></span><br>Time: <span id="time"></span></li>
 </ul>
-<p>Date: <span id="date"></span></p>
 
-<p>Time: <span id="time"></span></p>
-<script>
-var d = new Date();
-document.getElementById("date").innerHTML = (("0"+d.getDate()).slice(-2)) +"."+ (("0"+(d.getMonth()+1)).slice(-2)) +"."+ (d.getFullYear());
+<p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
 
-var t = new Date();
-document.getElementById("time").innerHTML = (("0"+t.getHours()).slice(-2)) +":"+ (("0"+t.getMinutes()).slice(-2));
-</script>
+
 </body>
